@@ -5,11 +5,11 @@ main()
   float v, flow1, flow2, hr, pipe1, pipe2, totalFlow;
   cout << "Enter Volume of the Pool: ";
   cin >> v;
-  cout << "Enter Flow Rate of the Pipe 1: ";
+  cout << " Enter Flow Rate of the Pipe 1: ";
   cin >> flow1;
-  cout << "Enter Flow Rate of the Pipe 2: ";
+  cout << " Enter Flow Rate of the Pipe 2: ";
   cin >> flow2;
-  cout << "Enter Worker Absent hours: ";
+  cout << " Enter Worker Absent hours: ";
   cin >> hr;
 
   pipe1 = flow1 * hr;
