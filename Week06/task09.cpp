@@ -12,6 +12,7 @@ main()
     cin >> holidays;
     cout << "Enter Year's Visits: ";
     cin >> visit;
+
     int result = totalHoliday(year, holidays, visit);
     cout << result << endl;
 }
@@ -20,16 +21,19 @@ float totalHoliday(string year, int holidays, int visit)
 {
     float weekend;
     float finalholidays;
+    float playingInSofia,playngHolidays,weeks;
     float fholidays;
+    weeks = 48;
+    playingInSofia = weeks -visit;
+    float playingSofiaTotal= playingInSofia *3/4;
+    playngHolidays = holidays *2/3;
+    fholidays = visit + playngHolidays + playingSofiaTotal;
     if (year == "normal")
     {
-        weekend = ((48 - visit) * 3) / 4;
-        finalholidays = weekend + ((holidays * 2) / 3) + visit;
+        finalholidays = fholidays;
     }
-    else if (year == "leap")
+    else 
     {
-        weekend = ((48 - visit) * 3) / 4;
-        fholidays = (weekend + ((holidays * 2) / 3)) + visit;
         finalholidays = fholidays * 1.15;
     }
     return finalholidays;
